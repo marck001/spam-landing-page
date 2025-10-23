@@ -5,8 +5,10 @@ import Navigation from '../components/Navigation';
 import ContentCard from '../components/ContentCard';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
+import { useDocumentTitle } from '../hooks/utils';
 
 export default function PrivacyPolicy() {
+  useDocumentTitle('Privacy Policy - Spam-sama.1984');
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-indigo-900 via-purple-900 to-stone-950 p-4 overflow-y-auto">
       <div className="w-full max-w-4xl mx-auto py-8">
