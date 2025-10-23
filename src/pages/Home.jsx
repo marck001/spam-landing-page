@@ -73,7 +73,7 @@ export default function Home() {
       <div className="w-72 h-72 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-1 shadow-2xl shadow-indigo-500/50">
       <div className="w-full h-full rounded-full bg-gray-900 flex items-center justify-center border-4 border-indigo-400/20 overflow-hidden">
         <img 
-          src="../../src/assets/spam-profile.png" 
+          src="/assets/spam-profile.png" 
           className="w-full h-full object-cover"
           alt="Spam-sama Profile"
         />
