@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import { Home } from 'lucide-react';
+
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import ContentCard from '../components/ContentCard';
@@ -12,18 +11,9 @@ export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-indigo-900 via-purple-900 to-stone-950 p-4 overflow-y-auto">
       <div className="w-full max-w-4xl mx-auto py-8">
-        <div className="flex items-start justify-between mb-6 gap-4">
-          <div className="flex-1">
-            <Header />
-          </div>
-          <Link
-            to="/"
-            className="bg-white/20 hover:bg-white/30 text-white p-3 rounded-lg transition-all flex-shrink-0"
-            title="Back to Home"
-          >
-            <Home size={24} />
-          </Link>
-        </div>
+       
+          <Header />
+        
 
         <Navigation />
 

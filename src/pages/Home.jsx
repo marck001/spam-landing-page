@@ -4,34 +4,21 @@ import { useCurrentYear } from '../hooks/utils';
 import { Home as HomeIcon }  from 'lucide-react';
 import Header from '../components/Header';
 export default function Home() {
-  const discordInviteUrl = "https://discord.com/api/oauth2/authorize?";
-  const discordServerUrl = "https://discord.gg/";
+  const discordInviteUrl = import.meta.env.VITE_DISCORD_INVITE_URL ;
+  const discordServerUrl = import.meta.env.VITE_DISCORD_SERVER_URL ;
   const currentYear = useCurrentYear();
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-indigo-950 via-purple-950 to-black flex items-center justify-center p-4">
       <div className="w-full max-w-6xl">
-        <div className="flex items-start justify-between mb-6 gap-4">
-          <div className="flex-1">
-            <Header />
-          </div>
-          <Link
-            to="/"
-            className="bg-white/20 hover:bg-white/30 text-white p-3 rounded-lg transition-all flex-shrink-0"
-            title="Back to Home"
-          >
-            <HomeIcon size={24} />
-          </Link>
-        </div>
+
+        <Header />
         
-        <div className="flex flex-col lg:flex-row items-center gap-16 mb-16 animate-fade-in">
+        <div className="flex flex-col lg:flex-row items-center gap-16 mb-32 animate-fade-in">
 
           <div className="text-center lg:text-left flex-1">
-            {/* <div className="inline-flex items-center gap-2 bg-indigo-500/20 border border-indigo-400/30 rounded-full px-4 py-2 mb-6">
-              <Sparkles size={16} className="text-indigo-300" />
-              <span className="text-indigo-200 text-sm font-medium">New: Emoji Features</span>
-            </div> */}
-            
+
+     
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Make A Fun<br />
               <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -82,7 +69,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-36">
           <div className="bg-gray-900/40 backdrop-blur border border-gray-700/50 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 hover:scale-105">
             <div className="bg-indigo-500/20 w-14 h-14 rounded-xl flex items-center justify-center mb-4">
               <Smile size={28} className="text-indigo-400" />
