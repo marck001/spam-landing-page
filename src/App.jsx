@@ -10,6 +10,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
